@@ -1,0 +1,46 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Laptop {
+  id: ID!
+  model: String!
+  diagonal: Int!
+  price: Int!
+  ram: Int!
+  coreCount: Int!
+  frequency: Int!
+  gpu: String
+  companyId: ID!
+  company: Company!
+}
+
+type Company {
+  id: ID!
+  name: String!
+  employeeCount: Int!
+  turnover: Int!
+  webSiteUrl: String!
+  laptops: [Laptop!]!
+}
+
+type PaginatedLaptops {
+  list: [Laptop!]!
+  totalCount: Int!
+  page: Int!
+  limit: Int!
+}
+
+type PaginatedCompanies {
+  list: [Company!]!
+  totalCount: Int!
+  page: Int!
+  limit: Int!
+}
+
+type Query {
+  laptop(id: Int!): Laptop!
+  laptops(limit: Int = 10, page: Int!): PaginatedLaptops!
+  company(id: ID!): Company!
+  companies(limit: Int = 10, page: Int!): PaginatedCompanies!
+}
