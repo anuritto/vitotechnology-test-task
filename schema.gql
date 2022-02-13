@@ -3,15 +3,14 @@
 # ------------------------------------------------------
 
 type Laptop {
-  id: ID!
-  model: String!
-  diagonal: Int!
-  price: Int!
-  ram: Int!
-  coreCount: Int!
-  frequency: Int!
+  model: String
+  diagonal: Int
+  price: Int
+  ram: Int
+  coreCount: Int
+  frequency: Int
   gpu: String
-  companyId: ID!
+  companyId: ID
   company: Company!
 }
 
@@ -39,7 +38,7 @@ type PaginatedCompanies {
 }
 
 type Query {
-  laptop(id: Int!): Laptop!
+  laptop(id: String!): Laptop
   laptops(limit: Int = 10, page: Int!): PaginatedLaptops!
   company(id: ID!): Company!
   companies(limit: Int = 10, page: Int!): PaginatedCompanies!

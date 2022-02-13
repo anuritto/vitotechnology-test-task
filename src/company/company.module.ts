@@ -3,9 +3,12 @@ import { CompanyService } from './company.service';
 import { CompanyController } from './company.controller';
 import { CompanyResolver } from './company.resolver';
 import { LaptopService } from 'src/laptop/laptop.service';
+import { CouchDbModule } from '@blendedbot/nest-couchdb';
+import { Laptop } from 'src/laptop/entity/laptop.entity';
 
 @Module({
   providers: [CompanyService, CompanyResolver, LaptopService],
-  controllers: [CompanyController]
+  controllers: [CompanyController],
+  imports: [CouchDbModule.forFeature([Laptop])]
 })
 export class CompanyModule {}

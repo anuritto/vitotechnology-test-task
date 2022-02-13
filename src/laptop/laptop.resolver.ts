@@ -17,9 +17,10 @@ export class LaptopResolver {
         private readonly companyService: CompanyService,
     ) {}
 
-    @Query(returns => Laptop)
-    async laptop(@Args('id', { type: () => Int })id: number) {
-        return this.laptopService.getOneById(id);
+    @Query(returns => Laptop, { nullable: true })
+    async laptop(@Args('id')id: string): Promise<Laptop> {
+        const one = await this.laptopService.getOneById(id);
+        return this.laptopService.transformOneToGraphQL(one);
     }
 
     @ResolveField('company', returns => Company)
@@ -35,7 +36,12 @@ export class LaptopResolver {
     async laptops(
         @Args('page', { type: () => Int })page: number,
         @Args('limit', { type: () => Int, defaultValue: 10 })limit: number
-    ) {
-        return (await this.laptopService.getList(page, limit));
+    ): Promise<PaginatedLaptops> {
+        const laptops = await this.laptopService.getList(page, limit);
+        
+        return {
+            ...laptops,
+            list: this.laptopService.transformListToGraphQL(laptops.list)
+        }
     }
 }
