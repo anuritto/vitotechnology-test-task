@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { Pagination } from 'src/Common/Pagination';
 import { Laptop } from './entity/laptop.entity';
 import { Laptop as LaptopModel} from './models/laptop.model';
+import { SortOrder} from 'nano';
 
 /** заглушка */
 const hardcode = {
@@ -24,15 +25,15 @@ export class LaptopService {
     ) {}
 
     async getOneById(id: string) {
-        const res = await (await this.laptopRepository.find({ selector: {"_id": id } })).docs[0];
-        console.log('res :>> ', res);
-        return res;
+        return (await this.getListByParam({ selector: {_id: id } })).docs[0];
+
     }
 
     async getList(page: number = 0, limit = 10) {
         const response = await (await this.laptopRepository.list({
             limit,
             include_docs: true,
+            skip: page * limit,
         }));
         const list = response.rows.map(row => row.doc)
         const totalCount = response.total_rows;
@@ -42,21 +43,35 @@ export class LaptopService {
         return res;
     }
 
-    async getTop(companyId: number) {
-        return (await this.getList(0)).list;
+    async getListByParam(data: { selector: Partial<Laptop>, sort?: SortOrder[] }, limit = 10) {
+        return this.laptopRepository.find({
+            ...data,
+            limit,
+        })
     }
 
+    async getTopСheapOfCompany(companyId: string) {
+        return (await this.getListByParam({
+            selector: { companyId },
+            sort: [{ price: 'asc' }],
+        })).docs;
+    }
+
+    // for the future
     transformOneToGraphQL(entity: Laptop): LaptopModel {
-        return <LaptopModel>{
-            model: entity.name,
-            coreCount: entity.coreCount,
-            frequency: entity.frequency,
-            ram: entity.ram,
-            price: entity.price,
-            companyId: entity.companyId,
-            gpu: entity.gpu,
-            diagonal: entity.diagonal,
+        if(entity) {
+            return <LaptopModel>{
+                model: entity.name,
+                coreCount: entity.coreCount,
+                frequency: entity.frequency,
+                ram: entity.ram,
+                price: entity.price,
+                companyId: entity.companyId,
+                gpu: entity.gpu,
+                diagonal: entity.diagonal,
+            }
         }
+        
     }
 
     transformListToGraphQL(entities: Laptop[]): LaptopModel[] {

@@ -15,12 +15,12 @@ type Laptop {
 }
 
 type Company {
-  id: ID!
+  id: String!
   name: String!
   employeeCount: Int!
   turnover: Int!
   webSiteUrl: String!
-  laptops: [Laptop!]!
+  cheapLaptops: [Laptop!]!
 }
 
 type PaginatedLaptops {

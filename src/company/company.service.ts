@@ -12,13 +12,14 @@ export class CompanyService {
     ) {}
 
     async getOneById(id: string) {
-        return await (await this.companyRepository.find({ selector: {"_id": id } })).docs[0];
+        return (await this.companyRepository.find({ selector: {"_id": id } })).docs[0];
     }
 
     async getList(page: number = 0, limit = 10) {
         const response = await (await this.companyRepository.list({
             limit,
             include_docs: true,
+            skip: page * limit,
         }));
         const list = response.rows.map(row => row.doc)
         const totalCount = response.total_rows;
@@ -28,8 +29,10 @@ export class CompanyService {
 
     // for the future
     transformOneToGraphQL(entity: Company): CompanyModel {
-        const { name, webSiteUrl, turnover, employeeCount } = entity;
-        return <CompanyModel>{ name, webSiteUrl, turnover, employeeCount };
+        if(entity) {
+            const { name, webSiteUrl, turnover, employeeCount } = entity;
+            return <CompanyModel>{ name, webSiteUrl, turnover, employeeCount };
+        } 
     }
 
     transformListToGraphQL(entities: Company[]): CompanyModel[] {

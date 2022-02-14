@@ -3,8 +3,8 @@ import { Laptop } from 'src/laptop/models/laptop.model';
 
 @ObjectType()
 export class Company {
-  @Field(type => ID)
-  id: number;
+  @Field()
+  id: string;
 
   @Field({ nullable: false })
   name: string;
@@ -19,5 +19,5 @@ export class Company {
   webSiteUrl: string;
 
   @Field(type => [Laptop], { nullable: false })
-  laptops?: Laptop[];
+  cheapLaptops?: Laptop[];
 }

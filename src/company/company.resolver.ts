@@ -39,9 +39,9 @@ export class CompanyResolver {
 
     }
 
-    @ResolveField('laptops', returns => [Laptop])
+    @ResolveField('cheapLaptops', returns => [Laptop])
     async laptops(@Parent()company: Company) {
-        const laptops =  await this.laptopService.getTop(company.id);
+        const laptops = await this.laptopService.getTopСheapOfCompany(company.id);
         return this.laptopService.transformListToGraphQL(laptops);
     }
 }
