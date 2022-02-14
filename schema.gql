@@ -40,6 +40,6 @@ type PaginatedCompanies {
 type Query {
   laptop(id: String!): Laptop
   laptops(limit: Int = 10, page: Int!): PaginatedLaptops!
-  company(id: ID!): Company!
+  company(id: String!): Company
   companies(limit: Int = 10, page: Int!): PaginatedCompanies!
 }

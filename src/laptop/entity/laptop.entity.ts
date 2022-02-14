@@ -4,7 +4,7 @@ import { Entity, CouchDbEntity } from '@blendedbot/nest-couchdb';
 export class Laptop extends CouchDbEntity {
   name: string;
   price: number;
-  companyId: number;
+  companyId: string;
   diagonal: number;
   ram: number;
   coreCount: number;

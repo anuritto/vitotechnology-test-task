@@ -28,7 +28,7 @@ export class Laptop {
   gpu?: string;
 
   @Field(type => ID, { nullable: true })
-  companyId: number;
+  companyId: string;
 
   @Field(type => Company, { nullable: true})
   company?: Company;
