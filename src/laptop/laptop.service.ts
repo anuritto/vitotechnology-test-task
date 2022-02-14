@@ -5,18 +5,6 @@ import { Laptop } from './entity/laptop.entity';
 import { Laptop as LaptopModel} from './models/laptop.model';
 import { SortOrder} from 'nano';
 
-/** заглушка */
-const hardcode = {
-    id: 1,
-    diagonal: 10,
-    price: 100,
-    model: 'dfdsf',
-    coreCount: 5,
-    ram: 4084,
-    frequency: 2400,
-    companyId: 1,
-};
-
 @Injectable()
 export class LaptopService {
     constructor(
