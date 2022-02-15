@@ -1,0 +1,81 @@
+{
+    "total_rows": 5,
+    "offset": 0,
+    "rows": [
+        {
+            "id": "80ca72aa13a250663bd869c6450107bd",
+            "key": "80ca72aa13a250663bd869c6450107bd",
+            "value": {
+                "rev": "2-5ff718a9b5ce61faa6543c1c1e6cded1"
+            },
+            "doc": {
+                "_id": "80ca72aa13a250663bd869c6450107bd",
+                "_rev": "2-5ff718a9b5ce61faa6543c1c1e6cded1",
+                "name": "ASUS",
+                "employeeCount": 5667,
+                "turnover": 13600000000,
+                "webSiteUrl": "asus.com"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb017718",
+            "key": "81d0e869c5ff8841008f0f9bfb017718",
+            "value": {
+                "rev": "4-cf85bc33e0949f949619adb7df3a0d31"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb017718",
+                "_rev": "4-cf85bc33e0949f949619adb7df3a0d31",
+                "name": "Lenovo",
+                "employeeCount": 50300,
+                "turnover": 43035000000,
+                "webSiteUrl": "lenovo.com"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb028834",
+            "key": "81d0e869c5ff8841008f0f9bfb028834",
+            "value": {
+                "rev": "2-7c0714fed258838cb2f499a18ae6b43d"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb028834",
+                "_rev": "2-7c0714fed258838cb2f499a18ae6b43d",
+                "name": "Hewlett-Packard",
+                "employeeCount": 66000,
+                "turnover": 2000000000,
+                "webSiteUrl": "hp.com/"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb02e3eb",
+            "key": "81d0e869c5ff8841008f0f9bfb02e3eb",
+            "value": {
+                "rev": "1-b8fbc3a73993691251fff729c2ea1170"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb02e3eb",
+                "_rev": "1-b8fbc3a73993691251fff729c2ea1170",
+                "name": "Micro-Star International Co",
+                "employeeCount": 2500,
+                "turnover": 3500000000,
+                "webSiteUrl": "msi.com"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb0312fc",
+            "key": "81d0e869c5ff8841008f0f9bfb0312fc",
+            "value": {
+                "rev": "1-ec901541a0bf1df9d3b7e3647362f0af"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb0312fc",
+                "_rev": "1-ec901541a0bf1df9d3b7e3647362f0af",
+                "name": "Huawei Technologies Co",
+                "employeeCount": 180000,
+                "turnover": 136000000000,
+                "webSiteUrl": "huawei.com"
+            }
+        }
+    ]
+}

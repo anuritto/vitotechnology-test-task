@@ -1,0 +1,403 @@
+{
+    "total_rows": 20,
+    "offset": 0,
+    "rows": [
+        {
+            "id": "80ca72aa13a250663bd869c645012d55",
+            "key": "80ca72aa13a250663bd869c645012d55",
+            "value": {
+                "rev": "5-f9716de53f12b62c8c9a175a94ad8598"
+            },
+            "doc": {
+                "_id": "80ca72aa13a250663bd869c645012d55",
+                "_rev": "5-f9716de53f12b62c8c9a175a94ad8598",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS ROG Strix G15 Advantage Edition G513QY-HQ007",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 8,
+                "frequency": 3.3,
+                "price": 147199,
+                "gpu": "Radeon RX 6800M"
+            }
+        },
+        {
+            "id": "80ca72aa13a250663bd869c645014622",
+            "key": "80ca72aa13a250663bd869c645014622",
+            "value": {
+                "rev": "4-b9f379e454b52a70b1b2e3f955911515"
+            },
+            "doc": {
+                "_id": "80ca72aa13a250663bd869c645014622",
+                "_rev": "4-b9f379e454b52a70b1b2e3f955911515",
+                "name": "ASUS TUF Gaming A15 FX506IC-HN020",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 8,
+                "frequency": 2.9,
+                "price": 77999,
+                "gpu": "GeForce RTX 3050"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb00bb6a",
+            "key": "81d0e869c5ff8841008f0f9bfb00bb6a",
+            "value": {
+                "rev": "1-3aed9615d49db0a4113a19e319023206"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb00bb6a",
+                "_rev": "1-3aed9615d49db0a4113a19e319023206",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS ROG Zephyrus G14 GA401QM-K2100T",
+                "diagonal": 14,
+                "ram": 32,
+                "coreCount": 8,
+                "frequency": 3,
+                "price": 128799,
+                "gpu": "GeForce RTX 3060"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb00d6f0",
+            "key": "81d0e869c5ff8841008f0f9bfb00d6f0",
+            "value": {
+                "rev": "1-32a39597ad48ef62d9658078ac36cd3b"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb00d6f0",
+                "_rev": "1-32a39597ad48ef62d9658078ac36cd3b",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS ROG Strix G15 G513IC-HN013",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 8,
+                "frequency": 2.9,
+                "price": 89999,
+                "gpu": "GeForce RTX 3050"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb00e8fc",
+            "key": "81d0e869c5ff8841008f0f9bfb00e8fc",
+            "value": {
+                "rev": "1-583fa95fa861719e0c66e9fc63ea277f"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb00e8fc",
+                "_rev": "1-583fa95fa861719e0c66e9fc63ea277f",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS TUF Gaming F15 FX506HCB-HN144T",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 6,
+                "frequency": 2.7,
+                "price": 86999,
+                "gpu": "GeForce RTX 3050"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb00f240",
+            "key": "81d0e869c5ff8841008f0f9bfb00f240",
+            "value": {
+                "rev": "1-42f1d511f8e2020503e3cb9ecdd09ff4"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb00f240",
+                "_rev": "1-42f1d511f8e2020503e3cb9ecdd09ff4",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS ZenBook 13 OLED UX325EA-KG261T",
+                "diagonal": 13.3,
+                "ram": 8,
+                "coreCount": 4,
+                "frequency": 2.4,
+                "price": 59499
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb0100ad",
+            "key": "81d0e869c5ff8841008f0f9bfb0100ad",
+            "value": {
+                "rev": "1-4b366343150d36b5b9aa532daa937416"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb0100ad",
+                "_rev": "1-4b366343150d36b5b9aa532daa937416",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS VivoBook 15 F513EA-BQ1543",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 2,
+                "frequency": 3,
+                "price": 44999
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb01171c",
+            "key": "81d0e869c5ff8841008f0f9bfb01171c",
+            "value": {
+                "rev": "1-77c8e63b31a6956a43a20ae7ca71bf3e"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb01171c",
+                "_rev": "1-77c8e63b31a6956a43a20ae7ca71bf3e",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS TUF Dash F15 FX516PR-HN033T",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 4,
+                "frequency": 3.3,
+                "price": 121499,
+                "gpu": "GeForce RTX 3070"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb012d1a",
+            "key": "81d0e869c5ff8841008f0f9bfb012d1a",
+            "value": {
+                "rev": "1-cb0c3ea748167e2c8b85e2216e6c14c5"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb012d1a",
+                "_rev": "1-cb0c3ea748167e2c8b85e2216e6c14c5",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS Laptop 15 L510MA-BQ595",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 4,
+                "frequency": 1.1,
+                "price": 31999
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb014751",
+            "key": "81d0e869c5ff8841008f0f9bfb014751",
+            "value": {
+                "rev": "1-0ecdc978b2e9a0c299a925b1b0f8b998"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb014751",
+                "_rev": "1-0ecdc978b2e9a0c299a925b1b0f8b998",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS TUF Dash F15 FX516PE-HN004",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 4,
+                "frequency": 3.1,
+                "price": 84999,
+                "gpu": "GeForce RTX 3050 Ti"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb014b05",
+            "key": "81d0e869c5ff8841008f0f9bfb014b05",
+            "value": {
+                "rev": "1-42d469e0aa47b5ee06527258405b4082"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb014b05",
+                "_rev": "1-42d469e0aa47b5ee06527258405b4082",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS VivoBook 15 OLED M513UA-L1192",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 6,
+                "frequency": 2.1,
+                "price": 57999
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb016059",
+            "key": "81d0e869c5ff8841008f0f9bfb016059",
+            "value": {
+                "rev": "1-d5a0feb14fe47dc65c7c6dc6867bddc3"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb016059",
+                "_rev": "1-d5a0feb14fe47dc65c7c6dc6867bddc3",
+                "companyId": "80ca72aa13a250663bd869c6450107bd",
+                "name": "ASUS Laptop 15 L510MA-BQ586T",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 4,
+                "frequency": 1.1,
+                "price": 37999
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb01e9b3",
+            "key": "81d0e869c5ff8841008f0f9bfb01e9b3",
+            "value": {
+                "rev": "1-804e5bf4665207c5e8c269bca9d7ddb8"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb01e9b3",
+                "_rev": "1-804e5bf4665207c5e8c269bca9d7ddb8",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 15ACH6",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 6,
+                "frequency": 3.3,
+                "price": 94999,
+                "gpu": "GeForce RTX 3050"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb01f951",
+            "key": "81d0e869c5ff8841008f0f9bfb01f951",
+            "value": {
+                "rev": "1-8cac02215e54a4cfd780a9f3c20f7364"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb01f951",
+                "_rev": "1-8cac02215e54a4cfd780a9f3c20f7364",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 15ACH6H",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 6,
+                "frequency": 3.3,
+                "price": 119999,
+                "gpu": "GeForce RTX 3060"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb020671",
+            "key": "81d0e869c5ff8841008f0f9bfb020671",
+            "value": {
+                "rev": "1-6cacb9a0ca3cdde8ac5594ddf3d469f9"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb020671",
+                "_rev": "1-6cacb9a0ca3cdde8ac5594ddf3d469f9",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 17IMH05H",
+                "diagonal": 17.3,
+                "ram": 16,
+                "coreCount": 6,
+                "frequency": 2.6,
+                "price": 99999,
+                "gpu": "GeForce RTX 2060"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb0218f5",
+            "key": "81d0e869c5ff8841008f0f9bfb0218f5",
+            "value": {
+                "rev": "1-f1cd120fab725185e8f11f29fd2db368"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb0218f5",
+                "_rev": "1-f1cd120fab725185e8f11f29fd2db368",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 15IMH05H",
+                "diagonal": 15.6,
+                "ram": 8,
+                "coreCount": 4,
+                "frequency": 2.5,
+                "price": 94999,
+                "gpu": "GeForce RTX 2060"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb021c9e",
+            "key": "81d0e869c5ff8841008f0f9bfb021c9e",
+            "value": {
+                "rev": "1-b64643457888dae454da6dd20a263fee"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb021c9e",
+                "_rev": "1-b64643457888dae454da6dd20a263fee",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 15ACH6H",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 8,
+                "frequency": 3.2,
+                "price": 149999,
+                "gpu": "GeForce RTX 3070"
+            }
+        },
+        {
+            "id": "81d0e869c5ff8841008f0f9bfb022f21",
+            "key": "81d0e869c5ff8841008f0f9bfb022f21",
+            "value": {
+                "rev": "1-f6191b240444d1048c0be4dce93faab9"
+            },
+            "doc": {
+                "_id": "81d0e869c5ff8841008f0f9bfb022f21",
+                "_rev": "1-f6191b240444d1048c0be4dce93faab9",
+                "companyId": "81d0e869c5ff8841008f0f9bfb017718",
+                "name": "Lenovo Legion 5 15ACH6",
+                "diagonal": 15.6,
+                "ram": 16,
+                "coreCount": 6,
+                "frequency": 3.3,
+                "price": 104999,
+                "gpu": "GeForce RTX 3050 Ti"
+            }
+        },
+        {
+            "id": "_design/387287e5a00003dd523810356716404826fc33b0",
+            "key": "_design/387287e5a00003dd523810356716404826fc33b0",
+            "value": {
+                "rev": "1-c5ebc02dfad8699eef99fcdac0c0a81b"
+            },
+            "doc": {
+                "_id": "_design/387287e5a00003dd523810356716404826fc33b0",
+                "_rev": "1-c5ebc02dfad8699eef99fcdac0c0a81b",
+                "language": "query",
+                "views": {
+                    "companyId-json-index": {
+                        "map": {
+                            "fields": {
+                                "companyId": "asc"
+                            },
+                            "partial_filter_selector": {}
+                        },
+                        "reduce": "_count",
+                        "options": {
+                            "def": {
+                                "fields": [
+                                    "companyId"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "_design/b5c56911385998ef8a2417e31c2ab19c78d82986",
+            "key": "_design/b5c56911385998ef8a2417e31c2ab19c78d82986",
+            "value": {
+                "rev": "1-eb83d14a53670329a507b4081b64bc18"
+            },
+            "doc": {
+                "_id": "_design/b5c56911385998ef8a2417e31c2ab19c78d82986",
+                "_rev": "1-eb83d14a53670329a507b4081b64bc18",
+                "language": "query",
+                "views": {
+                    "price-json-index": {
+                        "map": {
+                            "fields": {
+                                "price": "asc"
+                            },
+                            "partial_filter_selector": {}
+                        },
+                        "reduce": "_count",
+                        "options": {
+                            "def": {
+                                "fields": [
+                                    "price"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
