@@ -4,14 +4,14 @@
 
 type Laptop {
   id: String!
-  model: String
-  diagonal: Float
-  price: Int
-  ram: Int
-  coreCount: Int
-  frequency: Float
+  model: String!
+  diagonal: Float!
+  price: Int!
+  ram: Int!
+  coreCount: Int!
+  frequency: Float!
   gpu: String
-  companyId: String
+  companyId: String!
   company: Company!
 }
 

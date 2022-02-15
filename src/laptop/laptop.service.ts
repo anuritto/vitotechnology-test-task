@@ -14,7 +14,6 @@ export class LaptopService {
 
     async getOneById(id: string) {
         return (await this.getListByParam({ selector: {_id: id } })).docs[0];
-
     }
 
     async getList(page: number = 0, limit = 10) {
