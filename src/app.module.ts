@@ -7,6 +7,7 @@ import { LaptopModule } from './laptop/laptop.module';
 import { CompanyModule } from './company/company.module';
 import { CompanyController } from './company/company.controller';
 import { CouchDbModule } from '@blendedbot/nest-couchdb';
+import * as config from './LocalConfig';
 
 @Module({
   imports: [
@@ -16,12 +17,7 @@ import { CouchDbModule } from '@blendedbot/nest-couchdb';
       }),
       LaptopModule,
       CompanyModule,
-      CouchDbModule.forRoot({
-        url: 'http://127.0.0.1:5984',
-        username: 'admin',
-        userpass: 'admin',
-        requestDefaults: { jar: true },
-      }),
+      CouchDbModule.forRoot(config.couchDBConnection),
     ],
   controllers: [AppController, LaptopController, CompanyController],
   providers: [AppService],
