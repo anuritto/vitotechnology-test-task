@@ -19,7 +19,7 @@ export class CompanyResolver {
 
     @Query(returns => Company, { nullable: true })
     async company(@Args('id')id: string) {
-        return await this.companyService.getOneById(id);
+        return this.companyService.transformOneToGraphQL(await this.companyService.getOneById(id));
     }
 
     @Query(returns => PaginatedCompanies)

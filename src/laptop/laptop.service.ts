@@ -48,16 +48,8 @@ export class LaptopService {
     // for the future
     transformOneToGraphQL(entity: Laptop): LaptopModel {
         if(entity) {
-            return <LaptopModel>{
-                model: entity.name,
-                coreCount: entity.coreCount,
-                frequency: entity.frequency,
-                ram: entity.ram,
-                price: entity.price,
-                companyId: entity.companyId,
-                gpu: entity.gpu,
-                diagonal: entity.diagonal,
-            }
+            const { _id, name, coreCount, frequency, ram, price, companyId, gpu, diagonal} = entity;
+            return <LaptopModel>{ id: _id, model: name, coreCount, frequency, ram, price, companyId, gpu, diagonal}
         }
         
     }

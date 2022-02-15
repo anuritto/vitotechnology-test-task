@@ -3,14 +3,15 @@
 # ------------------------------------------------------
 
 type Laptop {
+  id: String!
   model: String
-  diagonal: Int
+  diagonal: Float
   price: Int
   ram: Int
   coreCount: Int
-  frequency: Int
+  frequency: Float
   gpu: String
-  companyId: ID
+  companyId: String
   company: Company!
 }
 
@@ -18,7 +19,7 @@ type Company {
   id: String!
   name: String!
   employeeCount: Int!
-  turnover: Int!
+  turnover: Float!
   webSiteUrl: String!
   cheapLaptops: [Laptop!]!
 }

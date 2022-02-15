@@ -3,13 +3,13 @@ import { Company } from 'src/company/models/company.model';
 
 @ObjectType()
 export class Laptop {
-//   @Field(type => ID)
-//   id: number;
+  @Field({ nullable: false })
+  id: string;
 
   @Field({ nullable: true })
   model: string;
 
-  @Field(type => Int, { nullable: true })
+  @Field({ nullable: true })
   diagonal: number;
 
   @Field(type => Int, { nullable: true })
@@ -21,13 +21,13 @@ export class Laptop {
   @Field(type => Int, { nullable: true })
   coreCount: number;
 
-  @Field(type => Int, { nullable: true })
+  @Field({ nullable: true })
   frequency: number;
 
   @Field({ nullable: true })
   gpu?: string;
 
-  @Field(type => ID, { nullable: true })
+  @Field({ nullable: true })
   companyId: string;
 
   @Field(type => Company, { nullable: true})

@@ -12,7 +12,7 @@ export class Company {
   @Field(type => Int, { nullable: false })
   employeeCount: number;
 
-  @Field(type => Int, { nullable: false })
+  @Field({ nullable: false })
   turnover: number;
 
   @Field({ nullable: false })

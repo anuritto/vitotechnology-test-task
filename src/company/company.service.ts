@@ -30,8 +30,8 @@ export class CompanyService {
     // for the future
     transformOneToGraphQL(entity: Company): CompanyModel {
         if(entity) {
-            const { name, webSiteUrl, turnover, employeeCount } = entity;
-            return <CompanyModel>{ name, webSiteUrl, turnover, employeeCount };
+            const { _id ,name, webSiteUrl, turnover, employeeCount } = entity;
+            return <CompanyModel>{ name, webSiteUrl, turnover, employeeCount, id: _id };
         } 
     }
 
